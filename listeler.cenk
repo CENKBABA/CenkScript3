@@ -1,14 +1,14 @@
 fonksiyon uzunluk(a){
 	syc=0
-	sürece(a!=[]){
+	sÃ¼rece(a!=[]){
 		a=a[:-1]
 		syc=syc+1
 	}
-	döndür syc
+	dÃ¶ndÃ¼r syc
 }
 
 fonksiyon yeni_liste(a,b){
-	döndür [b]*a
+	dÃ¶ndÃ¼r [b]*a
 }
 
 
@@ -23,14 +23,14 @@ liste[1][0]=liste[0][-1]*10+liste[0][0]
 
 syc1=0
 tekrarla(uzunluk(liste)){
-	yazdır 3169
+	yazdÄ±r 3169
 	syc2=0
-	sürece(syc2<uzunluk(liste[syc1])){
-		yazdır liste[syc1][syc2]
+	sÃ¼rece(syc2<uzunluk(liste[syc1])){
+		yazdÄ±r liste[syc1][syc2]
 		syc2=syc2+1
 	}
 	syc1=syc1+1
-	yazdır 3169
+	yazdÃ½r 3169
 }
 
 a=yeni_liste(10,0)
@@ -39,4 +39,5 @@ a[0]=31
 a[2]=a[0]*2+7
 a[-1]=100
 
-yazdır a
+
+yazdÄ±r a
