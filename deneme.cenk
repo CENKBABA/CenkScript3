@@ -1,0 +1,14 @@
+fonksiyon faktör(a){
+	eðer(a==0){
+		döndür 1
+	}
+	döndür a*faktör(a-1)
+}
+
+
+syc=0
+tekrarla(10){
+	yazdýr [31,syc]
+	yazdýr faktör(syc)
+	syc=syc+1
+}
