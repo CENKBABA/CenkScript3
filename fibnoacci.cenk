@@ -1,0 +1,12 @@
+fonksiyon fibnoacci(a){
+	eðer(a<=1){
+		döndür a
+	}
+	döndür fibnoacci(a-1)+fibnoacci(a-2)
+}
+
+syc=0
+tekrarla(10+1){
+	yazdýr fibnoacci(syc)
+	syc=syc+1
+}
