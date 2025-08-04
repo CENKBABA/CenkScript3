@@ -1,0 +1,9 @@
+a=1
+b=1
+
+tekrarla(10){
+	yazdýr a
+	yazdýr b
+	a=a+b
+	b=a+b
+}
