@@ -1,0 +1,55 @@
+fonksiyon üs(a,b){
+	dnd=1
+	tekrarla(b){
+		dnd=dnd*a
+	}
+	döndür dnd
+}
+fonksiyon kalan(a,b){
+	sürece(b<=a){
+		a=a-b
+	}
+	döndür a
+}
+fonksiyon bölüm(a,b){
+	döndür (a-kalan(a,b))/b
+}
+fonksiyon bölüm2(a,b){
+	dnd=0
+	sürece(b<=a){
+		a=a-b
+		dnd=dnd+1
+	}
+	döndür dnd
+}
+
+sayı1=67
+sayı2=15
+yazdır kalan(sayı1,sayı2)
+yazdır bölüm(sayı1,sayı2)
+yazdır bölüm2(sayı1,sayı2)
+
+
+fonksiyon asal(a){
+	eğer(a<2){
+		döndür 0
+	}
+	bl=2
+	dnd=1
+	sürece(bl<a){
+		eğer(kalan(a,bl)==0){
+			dnd=0
+			kır
+		}
+		bl=bl+1
+	}
+	döndür dnd
+}
+yazdır 3169
+syc=0
+tekrarla(1000){
+	eğer(asal(syc)){
+		yazdır syc
+	}
+	syc=syc+1
+}
