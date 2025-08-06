@@ -318,7 +318,7 @@ def değerle3(a,b):
 			sayıda=False
 			değerde=False
 			dnd+=i
-		elif i.isnumeric():
+		elif i.isnumeric() or i==".":
 			if not sayıda and not değerde:
 				sayıda=True
 			elif değerde:
