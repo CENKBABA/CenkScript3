@@ -1,0 +1,78 @@
+fonksiyon uzunluk(a){
+	dnd=0
+	sürece(a!=[]){
+		a=a[:-1]
+		dnd=dnd+1
+	}
+	döndür dnd
+}
+
+fonksiyon max(a){
+	dnd=a[0]
+	syc=1
+	tekrarla(uzunluk(a)-1){
+		//yazdır a[syc]
+		eğer(a[syc]>dnd){
+			dnd=a[syc]
+		}
+		syc=syc+1
+	}
+	döndür dnd
+}
+fonksiyon min(a){
+	dnd=a[0]
+	syc=1
+	tekrarla(uzunluk(a)-1){
+		//yazdır a[syc]
+		eğer(a[syc]<dnd){
+			dnd=a[syc]
+		}
+		syc=syc+1
+	}
+	döndür dnd
+}
+
+fonksiyon sırala(a){
+	katman=0
+	uzunluğu=uzunluk(a)
+	sürece(katman<uzunluğu){
+		syc=katman
+		değişecek=katman
+		max=a[katman]
+		sürece(syc<uzunluğu){
+			eğer(a[syc]>max){
+				max=a[syc]
+				değişecek=syc
+			}
+			syc=syc+1
+		}
+		geçici=a[katman]
+		a[katman]=max
+		a[değişecek]=geçici
+		katman=katman+1
+	}
+
+	//a[min(a)]=1000
+	
+	döndür a
+}
+
+
+
+liste=[20,10.5,91,5,30,72]
+
+
+liste[min(liste)]=liste[min(liste)]*5
+
+liste=[2]+liste
+liste[1]=liste[1]*10
+
+
+yazdır liste
+
+//liste[min(liste)]=1000
+
+yazdır max(liste)
+yazdır min(liste)
+
+yazdır sırala(liste)
