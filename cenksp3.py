@@ -1542,6 +1542,7 @@ def kod_oku(kod):
 						if dgri in lokal_parametreler[-1]:
 							lokal_parametreler[-1].update({dgri:listeli_ifade_çözücü(gecici)})
 						else:
+							# print("hata deneme\\sonsuzluk hatası",gecici)
 							değerler_global.update({dgri:listeli_ifade_çözücü(gecici)})
 					else:
 						değerler_global.update({dgri:listeli_ifade_çözücü(gecici)})
@@ -1724,7 +1725,7 @@ def kod_optimize(kod):
 			pass
 		elif satır and i!="\n":
 			satır=False
-		if not satır:
+		if not satır and i!="\t":
 			dnd+=i
 	# print("=====öncesi=====")
 	# print(kod)
