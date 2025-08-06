@@ -1384,8 +1384,9 @@ def kod_oku(kod):
 						index_id_ls.append(listeli_ifade_çözücü(i))
 					
 					if lokal_parametreler!=[]:
-						if dgri in lokal_parametreler[-1]:
-							lokal_parametreler[-1].update({dgri_2:ls_eleman_degistir(lokal_parametreler[dgri_2],index_id_ls,listeli_ifade_çözücü(gecici))})
+						if dgri_2 in lokal_parametreler[-1]:
+							# print("bug çözümü",lokal_parametreler,dgri_2)
+							lokal_parametreler[-1].update({dgri_2:ls_eleman_degistir(lokal_parametreler[-1][dgri_2],index_id_ls,listeli_ifade_çözücü(gecici))})
 						else:
 							değerler_global.update({dgri_2:ls_eleman_degistir(değerler_global[dgri_2],index_id_ls,listeli_ifade_çözücü(gecici))})
 					else:
@@ -1483,8 +1484,8 @@ def kod_oku(kod):
 								indexte_fonksiyon_bitti=False
 								
 								if lokal_parametreler!=[]:
-									if dgri in lokal_parametreler[-1]:
-										lokal_parametreler[-1].update({dgri_2:ls_eleman_degistir(lokal_parametreler[dgri_2],indexte_fonksiyon_çözülmüş,listeli_ifade_çözücü(gecici))})
+									if dgri_2 in lokal_parametreler[-1]:
+										lokal_parametreler[-1].update({dgri_2:ls_eleman_degistir(lokal_parametreler[-1][dgri_2],indexte_fonksiyon_çözülmüş,listeli_ifade_çözücü(gecici))})
 									else:
 										değerler_global.update({dgri_2:ls_eleman_degistir(değerler_global[dgri_2],indexte_fonksiyon_çözülmüş,listeli_ifade_çözücü(gecici))})
 								else:
