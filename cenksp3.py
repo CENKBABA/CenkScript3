@@ -1394,10 +1394,12 @@ def kod_oku(kod):
 						değerler_global.update({dgri_2:ls_eleman_degistir(değerler_global[dgri_2],index_id_ls,listeli_ifade_çözücü(gecici))})
 					
 				else:
-					if fnk_ifade==[]:
+					#print("işte tam şurda",fnk_ifade,kntls)
+					if not indexte_fonksiyon and not indexte_fonksiyon_bitti:
 						indexte_fonksiyon=True
 					#print("indexte fonksiyon var")
 					if indexte_fonksiyon:
+						# print("looo")
 						if fnk_çözüm!=[]:
 							#print("babam",fnk_ifade,fnk_çözüm)
 							ifd=fnk_ifade[-1]
